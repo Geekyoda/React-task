@@ -1,0 +1,28 @@
+.user-card {
+    border: 1px solid #882424;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    
+    
+    justify-content: space-between;
+    justify-content: space-between;
+  
+}
+
+.user-info {
+    display: flex;
+    
+}
+
+.user-info h2 {
+    text-align: left;
+    margin: 0; /* Remove default margin */
+}
+
+.user-info p {
+    text-align: right;
+    margin: 0;
+    flex: .5; /* This can be used to expand the paragraph element */
+}

@@ -1,0 +1,32 @@
+.clock {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+
+
+.clock p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.clock button {
+    
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  
+}
+
+.clock button:hover {
+    background-color: #0057a3;
+}  
