@@ -90,24 +90,22 @@ function UserProfile() {
 
 
 
-    const handleToggleClockAndFetchTime = (country) => {
-        setSelectedCountry(country.split('/'));
+    
+    const handleToggleClockAndFetchTime = (selectedValue) => {
+        const country = selectedValue.split('/'); // Split the selected value to get country details
+        setSelectedCountry(country);
         setClockRunning(true);
     };
 
-    const handleToggleClock = () => {
-        setClockRunning(!clockRunning);
-    };
     return (
         <div className="user-profile">
             <div className="Head">
                 <Link to="/">
                     <button className='Back'>Back</button>
                 </Link>
-
+ 
                 <div className="time-controls">
-
-                    <h3>Country Dropdown</h3>
+                 <h3>Country</h3>
                     <select
                         value={selectedCountry.join('/')}
                         onChange={(e) => handleToggleClockAndFetchTime(e.target.value)}
@@ -118,6 +116,7 @@ function UserProfile() {
                             </option>
                         ))}
                     </select>
+
 
                 </div>
                 <Clock selectedCountry={selectedCountry} />
